@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login Page</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 3vw 17vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+        }
+        .back {
+            background-color:rgba(255, 255, 255, 0.324);
+            padding: 5vw;
+            border-radius: 2vw;
+            margin-left: 10vw;
+        }
+        button {
+            width: 10vw;
+            border-radius: 3vw;
+        }
+        #bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            background-size: cover;
+            height: auto;
+            width: auto;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        // User Validations
+        function loginValidation() {
+            var uname = document.myform.username.value;
+            var password = document.myform.password.value;
+            if (uname == null || uname == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            } 
+            // Display success message
+            document.getElementById('alert-placeholder').innerHTML = `
+                <div class="alert alert-success alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Success!</strong> Login successful.
+                </div>
+            `;
+            return false; // Prevent actual form submission for demo purposes
+        }
+    </script>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://videos.pexels.com/video-files/8530006/8530006-hd_1280_720_25fps.mp4" type="video/mp4">
+        Your browser doesn't support HTML5 video.
+    </video>
+    <div class="main">
+        <div class="back">
+            <h1>Login Here!</h1>
+            <h3>Enter your login credentials</h3>
+            <form name="myform" onsubmit="return loginValidation()">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username/email" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <br>
+            <a href="register.html">Not registered? Create an account</a>
+            <div id="alert-placeholder" style="margin-top: 10px;"></div> <!-- Alert placeholder below the link -->
+        </div>
+    </div>
+</body>
+</html>

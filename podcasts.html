@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"> <!-- Stylish font from Google Fonts -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #start {
+      display: flex;
+      height: 15%;
+      align-items: end;
+      justify-content: center;
+    }
+    .card {
+      height: 80%;
+      width: 100%;
+      background-color: #f0f0f0; /* Background color for the podcast cards */
+      display: flex;
+      padding: 2vw;
+      flex-wrap: wrap;
+    }
+    button {
+      border-radius: 10px;
+      margin-left: 50px;
+      margin-top: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .box {
+      background-color:#53e3a06e;
+      height: 15vw;
+      width: 15vw;
+      margin-top: 2vw;
+      margin-right: 2vw; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; /* Rounded corners for cards */
+      overflow: hidden; /* Ensures child elements like images follow the card's border radius */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      height: 12vw;
+      width: 15vw;
+      border-radius: 15px; /* Rounded corners for images */
+    }
+    h1 {
+      text-decoration: underline;
+      font-family: 'Montserrat', sans-serif; /* Stylish font */
+      font-size: 2rem; /* Adjust font size as needed */
+      margin: 0;
+    }
+    .home-button {
+      padding: 0.5rem 1rem;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .home-button:hover {
+      background-color: #45a049;
+      color: white;
+    }
+    .title-container {
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center;
+      padding: 1rem;
+      background-color: #53e3a06e; /* Background color for the button row */
+      position: relative; /* Allows positioning of the home button */
+    }
+    .title-container h1 {
+      flex: 1;
+      text-align: center; /* Center the text */
+    }
+    .title-container .home-button {
+      position: absolute;
+      right: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-container">
+    <h1>Podcasts</h1>
+    <a href="home1.html" class="home-button">Home</a>
+  </div>
+  <div class="card">
+    <div class="box"> 
+      <img src="https://i.ytimg.com/vi/ddC_W_DLGg8/maxresdefault.jpg">
+      <a href="https://open.spotify.com/episode/4IJiIVecnq1YR0kaLkk9Vj">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://i.scdn.co/image/ab67656300005f1f7a9e64495f3e3749799c85b5" alt="">
+      <a href="https://open.spotify.com/show/5i3MCokWyGq3PWx43vwrfA">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://cdn.sanity.io/images/68lp9qid/production/9320ee8f7cd77ce4fc22f9b9066c387cff9f5298-1080x1080.png" alt="">
+      <a href="https://open.spotify.com/show/3nEHPUnz3ALMDuT2SaeTOu">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://m.media-amazon.com/images/S/dmp-catalog-images-prod/images/93a5b14c-7036-4dce-83a1-55bccb626fb9/93a5b14c-7036-4dce-83a1-55bccb626fb9--378527047._SX192_SY192_BL0_QL100__UXNaN_FMjpg_QL85_.jpg" alt="">
+      <a href="https://open.spotify.com/show/1dzrdmlW0QAPVxL8hEZ4xA">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6Nj9p-dHPTw-X1F2AE0iKEl0Q3RqfJb7JikvopbMkXJRMx6eutQACX1hhqUHMh0tK2c&usqp=CAU" alt="">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWYnaKfNG2Qvt">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeUt__lE7Anq5XwrgbpTM9EpDcve62u7FTC-xR9KnRbD2qdjzr53Em-qRsnrzQaWghBjs&usqp=CAU" alt="">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DX9Yf0RWuQ7be">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpEJJieA47mme8uwztkeavxQy88saggpnDAcntav8TjnrSjHCMHl71XBoQ2OA4MDEjhk&usqp=CAU" alt="">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWZpLZFIKJu8G">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://image.simplecastcdn.com/images/ae6533df-095e-4fef-b7ef-69ea44f76a8c/e1261386-24b3-4291-9898-23086628f76a/why-not-mint-money-1.jpg" alt="">
+      <a href="https://open.spotify.com/show/6K5UCX936DqnYR8hWGJLYR">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRin9Wch15R867a3i6IS6P01SaUR5Hma3fP3Q&s" alt="">
+      <a href="https://open.spotify.com/show/5D0oX4Ip01hi9N0clndHZY">
+        <button>clickhere</button>
+      </a>
+    </div>
+    <div class="box"> 
+      <img src="https://cdn.sanity.io/images/68lp9qid/production/9320ee8f7cd77ce4fc22f9b9066c387cff9f5298-1080x1080.png" alt="">
+      <a href="https://open.spotify.com/show/3nEHPUnz3ALMDuT2SaeTOu">
+        <button>clickhere</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
