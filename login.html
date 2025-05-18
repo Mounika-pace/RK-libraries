@@ -38,6 +38,22 @@
             width: auto;
             transform: translate(-50%, -50%);
         }
+        
+.home-button {
+            margin-right: auto;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            color: #4CAF50;
+            text-decoration: none;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 5vw;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+            color: white;
+        }
     </style>
     <script>
         // User Validations
@@ -63,6 +79,9 @@
     </script>
 </head>
 <body>
+     <header class="header">
+        <a href="index.html" class="home-button">Home</a>
+    </header>
     <video autoplay muted loop id="bg-video">
         <source src="https://videos.pexels.com/video-files/8530006/8530006-hd_1280_720_25fps.mp4" type="video/mp4">
         Your browser doesn't support HTML5 video.
